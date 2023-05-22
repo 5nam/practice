@@ -23,8 +23,10 @@ public class IndexController {
     public String index(Model model, @LoginUser SessionUser user) {
         model.addAttribute("posts", postsService.findAllDesc());
 
+//        SessionUser user = (SessionUser) httpSession.getAttribute("member");
+
         if (user != null) {
-            model.addAttribute("userName", user.getName());
+            model.addAttribute("memberName", user.getName());
         }
         return "index";
     }
