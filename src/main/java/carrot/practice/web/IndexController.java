@@ -20,10 +20,10 @@ public class IndexController {
     private final HttpSession httpSession;
 
     @GetMapping("/")
-    public String index(Model model, @LoginUser SessionUser user) {
+    public String index(Model model) {
         model.addAttribute("posts", postsService.findAllDesc());
 
-//        SessionUser user = (SessionUser) httpSession.getAttribute("member");
+        SessionUser user = (SessionUser) httpSession.getAttribute("member");
 
         if (user != null) {
             model.addAttribute("memberName", user.getName());
