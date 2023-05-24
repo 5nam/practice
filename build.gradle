@@ -37,14 +37,9 @@ dependencies {
 //	compileOnly 'org.springframework.boot:spring-boot-starter-oauth2-client'
 	implementation 'org.springframework.boot:spring-boot-starter-security'
 
-//	//
-//	implementation 'org.glassfish.jaxb:jaxb-runtime:4.0.0'
-//	implementation 'javax.xml.bind:jaxb-api:2.4.0-b180830.0359'
-//	implementation 'com.sun.xml.bind:jaxb-impl:4.0.0'
-//	implementation 'com.sun.xml.bind:jaxb-core:4.0.0'
-//
-//	implementation "jakarta.xml.bind:jakarta.xml.bind-api:2.3.2"
-//	implementation "org.glassfish.jaxb:jaxb-runtime:2.3.2"
+	// RDS p.309
+	runtimeOnly 'com.mysql:mysql-connector-j'
+
 }
 
 tasks.named('test') {
