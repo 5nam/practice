@@ -39,6 +39,8 @@ dependencies {
 	testImplementation('org.springframework.boot:spring-boot-starter-test')
 	testImplementation("org.springframework.security:spring-security-test") // 권한 관련
 
+	// Caused by: java.sql.SQLSyntaxErrorException: (conn=2321) Table 'umcDB.SPRING_SESSION' doesn't exist 해결 시도 1
+	implementation 'org.springframework.session:spring-session-jdbc'
 
 	// RDS p.309
 	runtimeOnly 'org.mariadb.jdbc:mariadb-java-client'
