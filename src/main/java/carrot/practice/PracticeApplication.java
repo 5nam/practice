@@ -17,9 +17,9 @@ public class PracticeApplication {
 	}
 
 	// Caused by: java.lang.IllegalStateException: Unable to detect database type 오류 해결 시도 2
-	@Bean
-	public IntegrationDataSourceScriptDatabaseInitializer customIntegrationDataSourceInitializer(DataSource dataSource) {
-		return new IntegrationDataSourceScriptDatabaseInitializer(dataSource, new DatabaseInitializationSettings());
-	}
+//	@Bean
+//	public IntegrationDataSourceScriptDatabaseInitializer customIntegrationDataSourceInitializer(DataSource dataSource) {
+//		return new IntegrationDataSourceScriptDatabaseInitializer(dataSource, new DatabaseInitializationSettings());
+//	}
 
 }
