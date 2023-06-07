@@ -42,6 +42,10 @@ dependencies {
 
 	// RDS p.309
 	runtimeOnly 'org.mariadb.jdbc:mariadb-java-client'
+
+	// Caused by: java.lang.IllegalStateException: Unable to detect database type 오류 해결 시도 5
+	runtimeOnly "org.springframework.session:spring-session-data-redis:2.0.3.RELEASE"
+
 }
 
 tasks.named('test') {
