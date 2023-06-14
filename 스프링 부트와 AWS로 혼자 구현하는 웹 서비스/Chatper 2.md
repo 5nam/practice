@@ -18,7 +18,7 @@
 - @Controller 이해하기
     - Controller 로 View 반환하기
         
-        ![Untitled](Chatper%202%20b4c7db25fda04b4d86caf5dea300131e/Untitled.png)
+        ![Untitled](Chatper%202/Untitled.png)
         
         1. Client 는 URI 형식으로 웹 서비스에 요청을 보냄
         2. DispatcherServlet 이 요청을 처리할 대상을 찾음
@@ -35,7 +35,7 @@
         - 컨트롤러에서 데이터를 반환하기 위해 @ResponseBody 어노테이션을 활용해주어야 함
         - 이를 통해 컨트롤러도 **Json 형태로 데이터를 반환**할 수 있음
         
-        ![Untitled](Chatper%202%20b4c7db25fda04b4d86caf5dea300131e/Untitled%201.png)
+        ![Untitled](Chatper%202/Untitled%201.png)
         
         1. Client 는 URI 형식으로 웹 서비스에 요청을 보낸다.
         2. DispatcherServlet 이 요청을 처리할 대상을 찾는다.
@@ -57,7 +57,7 @@
     
     개념
     → 디스패처 서블릿의 dispatch 는 “보내다”라는 뜻을 가지고 있음.
-    → **디스패처 서블릿은 HTTP 프로토콜로 들어오는 모든 요청을 가장 먼저 받아 적합한 컨트롤러에 이임해주는 프론트 컨트롤러(Front Controller)라고 정의**할 수 있음
+    → **`디스패처 서블릿은 HTTP 프로토콜로 들어오는 모든 요청을 가장 먼저 받아 적합한 컨트롤러에 이임해주는 프론트 컨트롤러(Front Controller)라고 정의`**할 수 있음
     → 클라이언트로부터 어떤 요청이 오면 Tomcat 과 같은 서블릿 컨테이너가 요청을 받게 됨
     → 그리고 이 요청을 프론트 컨트롤러인 디스패처 서블릿이 가장 먼저 받게 됨. 그럼 디스패처 서블릿은 공통적인 작업을 먼저 처리한 후에 해당 요청을 처리해야 하는 컨트롤러를 찾아서 작업을 위임
     
@@ -84,6 +84,7 @@
     
     </aside>
     
+
 - @RestContoller 이해하기
     - @RestController 는 @Controller 에 @ResopnseBody 가 추가된 것
     - RestController 의 주용도는 Json 형태로 객체 데이터를 반환하는 것
