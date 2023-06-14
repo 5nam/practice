@@ -5,10 +5,11 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.autoconfigure.integration.IntegrationDataSourceScriptDatabaseInitializer;
 import org.springframework.boot.sql.init.DatabaseInitializationSettings;
 import org.springframework.context.annotation.Bean;
+import org.springframework.data.jpa.repository.config.EnableJpaAuditing;
 
 import javax.sql.DataSource;
 
-//@EnableJpaAuditing
+@EnableJpaAuditing
 @SpringBootApplication
 public class PracticeApplication {
 
